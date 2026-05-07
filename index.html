@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider" style="--width: 400px; --height: 250px; --quantity: 10; --gap: 1px;">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="https://images.cdn.prd.api.discomax.com/2023/04/20/0e5ecf5c-8634-3c19-8ab1-fcf594b81e64.jpeg?f=jpg&q=75&w=1280&w=1200" alt="The Newsroom"></div>
+            <div class="item" style="--position: 2"><img src="https://is1-ssl.mzstatic.com/image/thumb/XJw8b6yfO2tTve2kcz1SbA/1200x675.jpg" alt="Love in the Big City"></div>
+            <div class="item" style="--position: 3"><img src="https://i.postimg.cc/pVmQmD4M/wlgyt-net.jpg" alt="WLGYT"></div>
+            <div class="item" style="--position: 4"><img src="https://a.storyblok.com/f/178900/1920x1080/fc9956de7a/dandadan-key-art-wide.png/m/1200x0/filters:quality(95)format(webp)" alt="Dandadan"></div>
+            <div class="item" style="--position: 5"><img src="https://i.postimg.cc/zGSYm80g/glassh-net.png" alt="Glass Heart"></div>
+            <div class="item" style="--position: 6"><img src="https://m.media-amazon.com/images/S/pv-target-images/ad46b708534dcf7a204806c6e4e3fbe9bd38af7f16626be4ea41b7d4094eda40.jpg" alt="Succession"></div>
+            <div class="item" style="--position: 7"><img src="https://is1-ssl.mzstatic.com/image/thumb/wdV8bBf13RcHk2Cbft4FMA/1200x675.jpg" alt="Oh My Ghost Clients"></div>
+            <div class="item" style="--position: 8"><img src="https://i.postimg.cc/tRcMkSsC/cclasswars.jpg" alt="Culinary Class Wars"></div>
+            <div class="item" style="--position: 9"><img src="https://img.gagaoolala.com/media/4a395a63-453424-lg.jpg" alt="Revenged Love"></div>
+            <div class="item" style="--position: 10"><img src="https://m.media-amazon.com/images/S/pv-target-images/3290b5bd927872aa1bc110fe75cc785b5ee799f6f8633a805656cce9eb3f5fc3.jpg" alt="Shrinking"></div>
+        </div>
+    </div>
+    <script src="script.js">
+    (function(){
+  function setBodyBackground(){
+    try{
+      const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.body.style.background = isDark ? '#191919' : '#ffffff';
+    } catch(e) {
+      document.body.style.background = '#ffffff';
+    }
+  }
+  if(window.matchMedia){
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(setBodyBackground);
+  }
+  setBodyBackground();
+})();
+    </script>
+</body>
+</html>
